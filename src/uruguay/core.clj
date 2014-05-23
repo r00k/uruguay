@@ -16,7 +16,7 @@ println
 
 ; Function calling
 (+ 3 1)
-(str "hey" "there")
+(str "hey " "there")
 (* (+ 1 1) (+ 1 1))
 
 ; Function definition
@@ -26,7 +26,6 @@ println
 (welcome "John")
 
 ; Also:
-;  Namespaces
 ;  Precedence
 
 
@@ -38,8 +37,10 @@ println
 
 (select-evens [1 2 3 4 5])
 
+; tpope/fireplace.vim
+; c!!
 ; cqp
-
+; cqc
 
 
 ;; === Immutable data structures ===
@@ -67,4 +68,9 @@ println
 
 (unless false "then" "else")
 (unless true "then" "else")
+
+
+;; === When things "change"  ===
+
+
 
