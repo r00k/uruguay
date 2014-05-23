@@ -26,6 +26,8 @@ Immutability
     Value objects
     Limiting mutation
     Record new data without obliterating old
+Macros
+  Use macroexpand
 ClojureScript
   Client-side apps that don't suck to write
   Show source maps
@@ -40,17 +42,13 @@ Notes:
   Maybe focus on just the differences from Ruby
     X Namespaces
     X Immutability
-    Macros
-      Use macroexpand
-    Laziness
+    X Macros
     STM
+    Laziness
     Core.async
     Metadata
     Generative testing
     Datomic
 
 Todo:
-  Watch Chelimsky's talk
   Review Clj in 10 big ideas
-
-
