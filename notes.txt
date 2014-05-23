@@ -1,0 +1,56 @@
+Outline:
+
+Intro
+  Not a tutorial
+  Going to focus on the stuff that's very different from Ruby
+Syntax firehose
+Interactive development
+  REPL
+  Fireplace
+Immutability
+  No more defensive copying
+    .dup can .die
+  GOTO quote
+  We already know this
+    Example 1
+      Does anyone wish numbers were mutable?
+      Imagine if 4.increment didn't return 5
+    Example 2
+      git
+  What if we brought this beyond our code?
+    Datomic
+      Tree metaphor
+      Query TAKES a database
+      Even your query becomes immutable!
+  Can use a little bit of this in Ruby
+    Value objects
+    Limiting mutation
+    Record new data without obliterating old
+ClojureScript
+  Client-side apps that don't suck to write
+  Show source maps
+
+
+Notes:
+  Maybe this is like Nolen's cljs thing for lighttable
+    Yeah, maybe it is. Halfway to live coding.
+    Just eval stuff and talk about it.
+    Has examples, and they run.
+
+  Maybe focus on just the differences from Ruby
+    X Namespaces
+    X Immutability
+    Macros
+      Use macroexpand
+    Laziness
+    STM
+    Core.async
+    Metadata
+    Generative testing
+    Datomic
+
+Todo:
+  Watch Chelimsky's talk
+  Review Clj in 10 big ideas
+
+
