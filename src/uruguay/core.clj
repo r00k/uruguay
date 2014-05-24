@@ -59,7 +59,6 @@ println
 ;; === When things "change" ===
 
 (def employee-count (atom 1))
-
 (swap! employee-count inc)
 
 
@@ -101,7 +100,3 @@ println
 
 (unless false "then" "else")
 (unless true "then" "else")
-
-
-
-

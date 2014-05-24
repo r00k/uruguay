@@ -32,6 +32,10 @@ Reference types
       Read, apply, try to set, retry
       No race conditions
       No mutexs/locks
+  Refs
+    STM
+      Analogous to database transactions
+
 Macros
   (cons
     (last expression)
