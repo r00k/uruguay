@@ -1,4 +1,7 @@
-(ns uruguay.core)
+(ns uruguay.core
+  (:require [clojure.string :refer [split
+                                    lower-case
+                                    reverse]]))
 
 ;; === Syntax sprint ===
 
@@ -73,14 +76,14 @@ println
     (alter checking-account - amount)
     (alter savings-account + amount)))
 
-(move-from-checking-to-savings
-  checking-account
-  savings-account
-  10)
+#_(move-from-checking-to-savings
+    checking-account
+    savings-account
+    10)
 
-(println
-  "Savings balance: " @savings-account
-  "Checking balance: " @checking-account)
+#_(println
+    "Savings balance: " @savings-account
+    "Checking balance: " @checking-account)
 
 
 ;; === Macros ===
@@ -100,3 +103,17 @@ println
 
 (unless false "then" "else")
 (unless true "then" "else")
+
+
+(reverse
+  (first
+    (split
+      (lower-case "RubyConf Uruguay")
+      #" ")))
+
+(->
+  "RubyConf Uruguay"
+  lower-case
+  (split #" ")
+  first
+  reverse)

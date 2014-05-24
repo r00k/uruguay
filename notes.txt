@@ -35,7 +35,6 @@ Reference types
   Refs
     STM
       Analogous to database transactions
-
 Macros
   (cons
     (last expression)
@@ -45,6 +44,7 @@ Macros
 ClojureScript
   Client-side apps that don't suck to write
   Show source maps
+Tip for Clojure Beginners
 
 
 Notes:
@@ -63,3 +63,4 @@ Setup:
   Make sure that select-evens has bug
   Require! file
   Open shell to rails with ag command
+  Open blog post in shell

@@ -2,6 +2,10 @@
 
 Notes and code for the talk I gave at RubyConf Uruguay.
 
+If you're a beginner and these notes intrigue you enough to give Clojure a try,
+you should read my post [Tips for Clojure
+Beginners](http://robots.thoughtbot.com/tips-for-clojure-beginners).
+
 
 ## License
 
