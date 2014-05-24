@@ -5,16 +5,12 @@ Intro
   Will focus on differences
   Questions welcome!
 Syntax firehose
-Interactive development
-  REPL
-  Fireplace
-  Don't need spring
-  Can connect anywhere
 Immutability
   Sharability
     No more defensive copying
       .dup can .die
   GOTO quote
+    "How did this get to be nil?"
   We already know this
     Example 1
       Does anyone wish numbers were mutable?
@@ -25,8 +21,11 @@ Immutability
     Value objects
     Limiting mutation
     Record new data without obliterating old
+      Answers 'how did my data get like this'
 Reference types
   How do we represent change?
+  Company map
+  Box
   Atoms
     Check-and-set
       Read, apply, try to set, retry
@@ -52,7 +51,7 @@ Notes:
     X Namespaces
     X Immutability
     X Macros
-    STM
+    X STM
     Laziness
     Core.async
     Metadata
@@ -64,3 +63,4 @@ Setup:
   Require! file
   Open shell to rails with ag command
   Open blog post in shell
+  Open core.clj and scroll to syntax

@@ -1,7 +1,5 @@
 (ns uruguay.core
-  (:require [clojure.string :refer [split
-                                    lower-case
-                                    reverse]]))
+  (:require [clojure.string :as string]))
 
 ;; === Syntax sprint ===
 
@@ -14,13 +12,13 @@
 ; Map
 {:name "Ben" :age 31}
 
-; Symbol
-println
-
 ; Function calling
 (+ 3 1)
+
 (str "hey " "there")
+
 (* (+ 1 1) (+ 1 1))
+
 
 ; Function definition
 (defn welcome [name]
@@ -28,22 +26,6 @@ println
 
 (welcome "John")
 
-; Also:
-;  Precedence
-
-
-
-;; === Interactive development ===
-
-(defn select-evens [numbers]
-  (filter odd? numbers))
-
-(select-evens [1 2 3 4 5])
-
-; tpope/fireplace.vim
-; c!!
-; cqp
-; cqc
 
 
 ;; === Immutable data structures ===
@@ -61,8 +43,22 @@ println
 
 ;; === When things "change" ===
 
-(def employee-count (atom 1))
-(swap! employee-count inc)
+(def thoughtbot-attributes
+  {:name "thoughtbot"
+   :employee-count 50})
+
+(def
+  thoughtbot
+  (atom thoughtbot-attributes))
+
+#_(swap!
+  thoughtbot
+  update-in
+  [:employee-count]
+  inc)
+
+(identity thoughtbot-attributes)
+
 
 
 (def savings-account (ref 100))
@@ -105,15 +101,15 @@ println
 (unless true "then" "else")
 
 
-(reverse
+(string/reverse
   (first
-    (split
-      (lower-case "RubyConf Uruguay")
+    (string/split
+      (string/lower-case "RubyConf Uruguay")
       #" ")))
 
 (->
   "RubyConf Uruguay"
-  lower-case
-  (split #" ")
+  string/lower-case
+  (string/split #" ")
   first
-  reverse)
+  string/reverse)
