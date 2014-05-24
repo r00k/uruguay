@@ -1,6 +1,4 @@
-# uruguay
-
-Notes and code for the talk I gave at RubyConf Uruguay.
+Notes and code for the Clojure talk I gave at RubyConf Uruguay.
 
 If you're a beginner and these notes intrigue you enough to give Clojure a try,
 you should read my post [Tips for Clojure
