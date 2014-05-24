@@ -15,17 +15,14 @@ Immutability
     Example 1
       Does anyone wish numbers were mutable?
       Imagine if 4.increment didn't return 5
-    Example 2
-      git
   Can use a little bit of this in Ruby
     Value objects
     Limiting mutation
     Record new data without obliterating old
       Answers 'how did my data get like this'
+* 10 to here *
 Reference types
   How do we represent change?
-  Company map
-  Box
   Atoms
     Check-and-set
       Read, apply, try to set, retry
@@ -33,7 +30,10 @@ Reference types
       No mutexs/locks
   Refs
     STM
-      Analogous to database transactions
+      Atomic - all or none
+      Consistent - can be validated
+      Isolated - xaction can't see effects of others while running
+* 16:30 to here *
 Macros
   (cons
     (last expression)
@@ -59,6 +59,7 @@ Notes:
     Datomic
 
 Setup:
+  Print notes
   Make sure that select-evens has bug
   Require! file
   Open shell to rails with ag command

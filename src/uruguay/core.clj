@@ -20,11 +20,19 @@
 (* (+ 1 1) (+ 1 1))
 
 
+
+
+
+
 ; Function definition
 (defn welcome [name]
   (str "Hey there, " name))
 
 (welcome "John")
+
+
+
+
 
 
 
