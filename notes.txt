@@ -2,15 +2,18 @@ Outline:
 
 Intro
   Not a tutorial
-  Going to focus on the stuff that's very different from Ruby
+  Will focus on differences
+  Questions welcome!
 Syntax firehose
 Interactive development
   REPL
   Fireplace
-  Don't need spring since you can reload small bits
+  Don't need spring
+  Can connect anywhere
 Immutability
-  No more defensive copying
-    .dup can .die
+  Sharability
+    No more defensive copying
+      .dup can .die
   GOTO quote
   We already know this
     Example 1
@@ -18,17 +21,23 @@ Immutability
       Imagine if 4.increment didn't return 5
     Example 2
       git
-  What if we brought this beyond our code?
-    Datomic
-      Tree metaphor
-      Query TAKES a database
-      Even your query becomes immutable!
   Can use a little bit of this in Ruby
     Value objects
     Limiting mutation
     Record new data without obliterating old
+Reference types
+  How do we represent change?
+  Atoms
+    Check-and-set
+      Read, apply, try to set, retry
+      No race conditions
+      No mutexs/locks
 Macros
-  Use macroexpand
+  (cons
+    (last expression)
+    (butlast expression))
+  Line in ruby between you and special
+  Handful special, rest macro/fn
 ClojureScript
   Client-side apps that don't suck to write
   Show source maps
@@ -49,3 +58,4 @@ Notes:
 Setup:
   Make sure that select-evens has bug
   Require! file
+  Open shell to rails with ag command
