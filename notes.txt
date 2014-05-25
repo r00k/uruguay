@@ -60,8 +60,7 @@ Notes:
 
 Setup:
   Print notes
-  Make sure that select-evens has bug
   Require! file
   Open shell to rails with ag command
-  Open blog post in shell
+  Open blog post in browser
   Open core.clj and scroll to syntax
